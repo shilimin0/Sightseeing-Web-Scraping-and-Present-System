@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="/static/table.css" type="text/css" media="screen">
+    <h1 align="center">拉萨景点评分系统</h1>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <table align="center">
+      <tr>
+        <th>景点</th>
+        <th>score得分</th>
+        <th>携程得分</th>
+        <th>地址</th>
+      </tr>
+
+      {% for item in data[2] %}
+      <tr>
+        <td>{{ item.sight }}</td>
+        <td>{{ item.overal }}分</td>
+        <td>{{ item.rating }}分</td>
+        <td>{{ item.sight_address }}</td>
+      </tr>
+      {% endfor %}
+
+    </table>
+  </body>
+</html>

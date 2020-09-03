@@ -1,0 +1,30 @@
+* {
+box-sizing: border-box;
+}
+
+table{
+  width: 900px;
+}
+
+th{
+  text-align: center;
+}
+
+table, th, td{
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+
+th,td{
+  padding: 20px
+}
+
+
+*:focus {
+outline: none;
+}
+body {
+font-family: Arial;
+background-color: #3498DB;
+padding: 50px;
+}
